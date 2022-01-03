@@ -15,5 +15,5 @@ jobs:
     runs-on: ubuntu-latest
     name: Check changelog included
     steps:
-      - uses: bitergia/release-tools-check-changelog@main
+      - uses: bitergia/release-tools-check-changelog@master
 ```
