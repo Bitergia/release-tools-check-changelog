@@ -23,7 +23,7 @@ runs:
     - name: Validate the new changelog files (yaml format)
       run: |
         filenames=$(git diff --name-only --diff-filter=A HEAD^ HEAD | grep 'releases/unreleased')
-        echo $filenames | while read filename;
+        echo "$filenames" | while read filename;
         do
           echo -n "$filename: "
           if ! [ -s $filename ]; then
