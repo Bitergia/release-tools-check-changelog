@@ -11,10 +11,10 @@ runs:
       run: git diff --name-only --diff-filter=A HEAD^ HEAD | grep 'releases/unreleased'
       shell: bash
 
-    - name: Set up Python 3.8
+    - name: Set up Python 3
       uses: actions/setup-python@82c7e631bb3cdc910f68e0081d67478d79c6982d # v5.1.0
       with:
-        python-version: 3.8
+        python-version: '3.x'
 
     - name: Install pyyaml to validate file
       run: pip install pyyaml
